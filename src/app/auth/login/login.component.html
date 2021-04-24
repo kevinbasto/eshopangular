@@ -1,2 +1,21 @@
-<p>login works!</p>
-<h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nihil quasi excepturi eos reprehenderit rem sit pariatur iure. Vitae incidunt fugiat possimus, vero blanditiis nesciunt doloribus rem ducimus natus ipsa.</h1>
+<div class="card">
+    <div class="card_header">
+        <h1>Omnicare</h1>
+        <span>Inicia sesión para acceder al sistema</span>
+    </div>
+    <form [formGroup]="loginForm" (submit)="submit()">
+        <div class="card_body">
+            <div class="form_group">
+                <label>Correo electrónico</label>
+                <input type="email" formControlName="email">
+            </div>
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" formControlName="password">
+            </div>
+        </div>
+        <div class="card_footer">
+            <button type="submit" [disabled]="!loginForm.valid">Iniciar sesión</button>
+        </div>
+    </form>
+</div>
