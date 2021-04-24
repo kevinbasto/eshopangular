@@ -35,14 +35,13 @@ export class AuthService {
     })
   }
 
-  async register(username : string, email : string, password : string){
+  async register(name : string, email : string, password : string){
     try{
       return await this.afAuth.createUserWithEmailAndPassword(email, password)
       .then(register => {
         this.afs.collection('users').doc(register.user?.uid).set({
-          username: username,
+          username: name,
           email: email,
-          role: "reader",
           level: 1,
           banned: false
         });

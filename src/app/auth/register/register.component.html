@@ -1,1 +1,28 @@
-<p>register works!</p>
+<div class="card">
+    <div class="card-header">
+        <h1>Omnicare</h1>
+        <span>Registrate para acceder a las promociones</span>
+    </div>
+    <form [formGroup]="registerForm" (submit)="submit()">
+        <div class="card-body">
+            <div class="form-group">
+                <input type="text" formControlName="name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" formControlName="email" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+                <input type="password" formControlName="password" placeholder="Contraseña ">
+            </div>
+            <div>
+                <input type="checkbox" formControlName="terms">
+                <span>
+                    Acepto los <a href="" style="color: #2FA8FF; text-decoration: none;"> Términos y condiciones </a>
+                </span>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="button-primary" type="submit" [disabled]="!registerForm.valid">Registrarse</button>
+        </div>
+    </form>
+</div>

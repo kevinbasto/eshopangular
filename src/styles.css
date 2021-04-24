@@ -1,8 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     background-color: #CFCFCF;
+    font-family:  sans-serif;;
 }
 
 .primary{
     background-color: #622C7B;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #CFCFCF;
+    
+}
+
+.card-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom:  1px solid #CFCFCF;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card-body{
+    padding: 1em;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.card-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.button-primary{
+    background-color: #622C7B;
+    color: white;
+    border: 1px #622C7B;
+    font-size: 1.5em;
+    border-radius: 15px;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+.form-group{
+    margin: 5px;
+}
+
+.form-group input{
+    width: 98%;
+    margin: auto;
+    height: 3em;
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
 }

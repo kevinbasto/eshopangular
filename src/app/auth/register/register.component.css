@@ -1,0 +1,12 @@
+.card-header h1{
+    margin: 0;
+    text-align: center;
+}
+
+.card-header span{
+    margin: 0;
+    
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
